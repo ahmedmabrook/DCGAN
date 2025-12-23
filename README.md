@@ -33,6 +33,7 @@ If you are coming from the book's Keras implementation, here are the key differe
 3.  **Computational Graph:** Uses `.detach()` on generated images when training the Discriminator to prevent gradients from flowing back into the Generator.
 4.  **Weights:** Weights are initialized (explicitly or implicitly) and updated using the Adam optimizer with `betas=(0.5, 0.999)` to prevent mode collapse.
 
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -42,10 +43,11 @@ If you are coming from the book's Keras implementation, here are the key differe
 * Matplotlib
 * Jupyter Notebook / Google Colab
 
+
 ### Installation
 ```bash
 pip install torch torchvision matplotlib
-
+```
 
 ### Usage
 The easiest way to run this is via the provided Jupyter Notebook.
@@ -58,6 +60,6 @@ The training loop will save images every save_interval epochs to visualize the G
 📚 References
 1. Book: Deep Learning for Vision Systems by Mohamed Elgendy.
 2. Original Code (Keras): eriklindernoren/Keras-GAN
-
+   
 📝 License
 This project is open-source and available for educational purposes.
